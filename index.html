@@ -9,9 +9,7 @@
   <title>Adeyemo Benjamin Ajala | Professional Football Profile</title>
   <meta name="description" content="Official football profile of Adeyemo Benjamin Ajala. Striker and winger, with career experience at FC Wohlen and FC Brugg.">
   <meta name="robots" content="index,follow">
-
   <link rel="canonical" href="https://benjaminadeyemo01.github.io/adeyemo-benjamin-ajala/">
-
   <meta property="og:title" content="Adeyemo Benjamin Ajala | Football Player">
   <meta property="og:description" content="Striker. Winger. Football player profile, career and statistics.">
   <meta property="og:type" content="profile">
@@ -238,6 +236,56 @@
       font-size: 16px;
     }
 
+    /* PLAYER STRENGTHS */
+
+    .strengths-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px 35px;
+      background: linear-gradient(145deg, #14263d, #0b1625);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 30px;
+    }
+
+    .strength-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 9px;
+    }
+
+    .strength-name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .strength-rating {
+      color: var(--light);
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .strength-track {
+      width: 100%;
+      height: 9px;
+      background: #26374d;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .strength-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #0873df, #70bdff);
+      border-radius: 20px;
+    }
+
+    .strength-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 18px;
+    }
+
     .career {
       border-left: 2px solid var(--blue);
       margin-left: 8px;
@@ -311,6 +359,7 @@
       .player-photo { height: 260px; }
       .stats { grid-template-columns: repeat(2, 1fr); }
       .about-grid { grid-template-columns: 1fr; }
+      .strengths-grid { grid-template-columns: 1fr; padding: 22px; }
       h1 { font-size: 45px; }
     }
 
@@ -338,7 +387,6 @@
 </head>
 
 <body>
-
   <div class="container">
 
     <nav>
@@ -347,25 +395,21 @@
         <a href="#about">Profile</a>
         <a href="#career">Career</a>
         <a href="#stats">Stats</a>
+        <a href="#strengths">Strengths</a>
         <a href="#highlights">Highlights</a>
       </div>
     </nav>
 
     <header class="hero">
-
       <div>
         <div class="eyebrow">OFFICIAL PLAYER PROFILE</div>
-
         <h1>ADEYEMO<br>BENJAMIN<br><span>AJALA.</span></h1>
-
         <div class="positions">STRIKER · WINGER</div>
-
         <p class="hero-description">
           A versatile attacking footballer with a left foot,
           comfortable on the right, and a passion for
           scoring goals and creating opportunities.
         </p>
-
         <a href="#stats" class="button">VIEW PLAYER STATS ↗</a>
       </div>
 
@@ -374,7 +418,6 @@
         <strong>PLAYER PHOTOGRAPH</strong>
         <small>Professional portrait coming soon</small>
       </div>
-
     </header>
 
     <section id="stats">
@@ -386,17 +429,14 @@
           <div class="stat-number">20</div>
           <div class="stat-label">Combined goals</div>
         </div>
-
         <div class="stat-card">
           <div class="stat-number">600</div>
           <div class="stat-label">Combined minutes</div>
         </div>
-
         <div class="stat-card">
           <div class="stat-number">2</div>
           <div class="stat-label">Clubs listed</div>
         </div>
-
         <div class="stat-card">
           <div class="stat-number">180</div>
           <div class="stat-label">Height · cm</div>
@@ -419,27 +459,22 @@
           <small>Full name</small>
           <strong>Adeyemo Benjamin Ajala</strong>
         </div>
-
         <div class="info">
           <small>Date of birth</small>
           <strong>29 November 2001</strong>
         </div>
-
         <div class="info">
           <small>Position</small>
           <strong>Striker / Winger</strong>
         </div>
-
         <div class="info">
           <small>Preferred foot</small>
           <strong>Left · Comfortable with right</strong>
         </div>
-
         <div class="info">
           <small>Height</small>
           <strong>180 cm</strong>
         </div>
-
         <div class="info">
           <small>Playing style</small>
           <strong>Attacking football</strong>
@@ -447,22 +482,93 @@
       </div>
     </section>
 
+    <section id="strengths">
+      <div class="section-label">PLAYER ATTRIBUTES</div>
+      <h2>Player Strengths</h2>
+
+      <div class="strengths-grid">
+
+        <div class="strength-item">
+          <div class="strength-top">
+            <span class="strength-name">Pace</span>
+            <span class="strength-rating">90</span>
+          </div>
+          <div class="strength-track">
+            <div class="strength-fill" style="width:90%"></div>
+          </div>
+        </div>
+
+        <div class="strength-item">
+          <div class="strength-top">
+            <span class="strength-name">Dribbling</span>
+            <span class="strength-rating">60</span>
+          </div>
+          <div class="strength-track">
+            <div class="strength-fill" style="width:60%"></div>
+          </div>
+        </div>
+
+        <div class="strength-item">
+          <div class="strength-top">
+            <span class="strength-name">Finishing</span>
+            <span class="strength-rating">67</span>
+          </div>
+          <div class="strength-track">
+            <div class="strength-fill" style="width:67%"></div>
+          </div>
+        </div>
+
+        <div class="strength-item">
+          <div class="strength-top">
+            <span class="strength-name">Strength</span>
+            <span class="strength-rating">80</span>
+          </div>
+          <div class="strength-track">
+            <div class="strength-fill" style="width:80%"></div>
+          </div>
+        </div>
+
+        <div class="strength-item">
+          <div class="strength-top">
+            <span class="strength-name">Ball Control</span>
+            <span class="strength-rating">72</span>
+          </div>
+          <div class="strength-track">
+            <div class="strength-fill" style="width:72%"></div>
+          </div>
+        </div>
+
+        <div class="strength-item">
+          <div class="strength-top">
+            <span class="strength-name">Pressing</span>
+            <span class="strength-rating">88</span>
+          </div>
+          <div class="strength-track">
+            <div class="strength-fill" style="width:88%"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="strength-note">
+        Player attribute ratings supplied by the player.
+        These are personal estimates, not independently tested measurements.
+      </p>
+    </section>
+
     <section id="career">
       <div class="section-label">FOOTBALL JOURNEY</div>
       <h2>Club Career</h2>
 
       <div class="career">
-
         <div class="career-item">
           <h3>FC Brugg</h3>
           <p>Season: 2025/2026</p>
         </div>
-
         <div class="career-item">
           <h3>FC Wohlen</h3>
           <p>Season: 2023/2024</p>
         </div>
-
       </div>
     </section>
 
@@ -485,6 +591,5 @@
     </footer>
 
   </div>
-
 </body>
 </html>
